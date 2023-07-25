@@ -19,15 +19,16 @@ const Home = () => {
         <motion.section className='home'{...slideAnimation('left')}>
           <motion.header {... slideAnimation('down')}>
             <img
-            src='./threejs.png'
+            src='./logo.png'
             alt='logo'
-            className='w-8 h-8 object-contain'
+            className='h-40 w-40 object-contain'
+            
             />
           </motion.header>
         <motion.div className='home-content'{...headContainerAnimation}>
           <motion.div {...headTextAnimation}>
             <h1 className='head-text'>
-              LETS <br className='xl:block hidden'/> DO IT...
+              Smart <br className='xl:block hidden'/> Sartor...
             </h1>
           </motion.div>
           <motion.div
