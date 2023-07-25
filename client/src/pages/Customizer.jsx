@@ -69,12 +69,12 @@ const Customizer = () => {
 
       handleDecals(type , `data:image/png;base64,${data.photo}`)
     } catch (error) {
-      alert(error)
+      alert(error , 'api key not working');
     }finally{
       setGeneratingImg(false);
       setActiveEditorTab("");
     }
-   }
+   }; 
 
    const handleDecals = (type , result ) => {
     const decalType = DecalTypes[type];
@@ -167,6 +167,15 @@ const handleActiveFilterTab = (tabName) => {
         handleClick={() => handleActiveFilterTab(tab.name)}
         />
       ))}
+      <button
+      className="download-btn" onClick={downloadCanvasToImage}
+      >
+        <img 
+        src={download}
+        alt='download_image'
+        className="w-3/5 h-3/5 object-contain"
+        />
+      </button>
     </motion.div>
 
   </>

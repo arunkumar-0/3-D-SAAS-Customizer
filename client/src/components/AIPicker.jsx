@@ -2,7 +2,7 @@ import CustomButton from "./CustomButton";
 
 const AIPicker = ({prompt , setPrompt , generatingImg , handleSubmit}) => {
 
-  console.log('genetaing Image' , generatingImg)
+
   return(
     <div className="aipicker-container">
       <textarea
