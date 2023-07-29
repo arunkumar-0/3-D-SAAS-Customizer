@@ -55,7 +55,7 @@ const Customizer = () => {
       //call our backened for image 
       setGeneratingImg(true);
 
-      const response = await fetch ('http://localhost:10000/api/v1/dalle' , {
+      const response = await fetch ('https://nodebackend-n16d.onrender.com/api/v1/dalle' , {
         method: 'POST',
         headers : {
           'Content-Type' : 'application/json'
