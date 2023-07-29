@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nod index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
